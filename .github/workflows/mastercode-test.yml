@@ -1,0 +1,20 @@
+# Dibuat otomatis oleh MasterCode (Belum dikenali). Boleh diedit; MasterCode cuma menimpa kalau kamu klik
+# "Jalankan di cloud" lagi dan isinya berbeda.
+name: MasterCode Test
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  run:
+    name: "Belum dikenali"
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: "Ambil kode"
+        uses: actions/checkout@v4
+      - name: "Daftar file"
+        run: "ls -R | head -200"
